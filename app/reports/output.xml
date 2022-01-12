@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.8.2 on darwin)" generated="20210810 14:22:44.520" rpa="false" schemaversion="2">
+<suite id="s1" name="Create User" source="/Users/oa1220/Documents/Projects/appium-framework/app/tests/create_user.robot">
+<test id="s1-t1" name="Validate register screen">
+<kw name="When Launch application">
+<msg timestamp="20210810 14:22:51.556" level="FAIL">No keyword with name 'When Launch application' found.</msg>
+<status status="FAIL" starttime="20210810 14:22:51.556" endtime="20210810 14:22:51.557"/>
+</kw>
+<kw name="And Click create user button">
+<status status="NOT RUN" starttime="20210810 14:22:51.560" endtime="20210810 14:22:51.560"/>
+</kw>
+<kw name="Then Validate title">
+<arg>Registro</arg>
+<status status="NOT RUN" starttime="20210810 14:22:51.562" endtime="20210810 14:22:51.562"/>
+</kw>
+<kw name="And User is on register screen">
+<status status="NOT RUN" starttime="20210810 14:22:51.563" endtime="20210810 14:22:51.563"/>
+</kw>
+<status status="FAIL" starttime="20210810 14:22:51.554" endtime="20210810 14:22:51.564">No keyword with name 'When Launch application' found.</status>
+</test>
+<test id="s1-t2" name="Verify registration with empty boxes">
+<kw name="When User is on register screen">
+<msg timestamp="20210810 14:22:51.567" level="FAIL">No keyword with name 'When User is on register screen' found.</msg>
+<status status="FAIL" starttime="20210810 14:22:51.566" endtime="20210810 14:22:51.567"/>
+</kw>
+<kw name="And Click register button">
+<status status="NOT RUN" starttime="20210810 14:22:51.568" endtime="20210810 14:22:51.568"/>
+</kw>
+<kw name="Then Verify popup title is">
+<arg>Campos vacíos</arg>
+<status status="NOT RUN" starttime="20210810 14:22:51.569" endtime="20210810 14:22:51.570"/>
+</kw>
+<kw name="And Validate popup message is">
+<arg>Favor de llenar todos los campos.</arg>
+<status status="NOT RUN" starttime="20210810 14:22:51.571" endtime="20210810 14:22:51.571"/>
+</kw>
+<status status="FAIL" starttime="20210810 14:22:51.564" endtime="20210810 14:22:51.571">No keyword with name 'When User is on register screen' found.</status>
+</test>
+<kw name="Close all screens" type="TEARDOWN">
+<msg timestamp="20210810 14:22:51.574" level="FAIL">No keyword with name 'Close all screens' found.</msg>
+<status status="FAIL" starttime="20210810 14:22:51.574" endtime="20210810 14:22:51.574">No keyword with name 'Close all screens' found.</status>
+</kw>
+<doc>This test suite contains app tests for the login page</doc>
+<status status="FAIL" starttime="20210810 14:22:44.532" endtime="20210810 14:22:51.574">Suite teardown failed:
+No keyword with name 'Close all screens' found.</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Create User">Create User</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210810 14:22:48.317" level="ERROR">Error in file '/Users/oa1220/Documents/Projects/appium-framework/app/tests/create_user.robot' on line 4: Importing library '/Users/oa1220/Documents/Projects/appium-framework/app/keywords/common.py' failed: WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+
+Traceback (most recent call last):
+  File "/Users/oa1220/Documents/Projects/appium-framework/app/keywords/common.py", line 7, in &lt;module&gt;
+    bp = BasePage()
+  File "/Users/oa1220/Documents/Projects/appium-framework/app/tests/../../framework/utils/base_page.py", line 18, in __init__
+    self.driver = clients.getMobileDriver()
+  File "/Users/oa1220/Documents/Projects/appium-framework/app/tests/../../framework/config/clients.py", line 10, in getMobileDriver
+    driver = createDriver()
+  File "/Users/oa1220/Documents/Projects/appium-framework/app/tests/../../framework/config/clients.py", line 34, in createDriver
+    driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", desired_caps)
+  File "/Users/oa1220/Documents/Projects/appium-framework/venv/lib/python3.8/site-packages/appium/webdriver/webdriver.py", line 155, in __init__
+    super().__init__(
+  File "/Users/oa1220/Documents/Projects/appium-framework/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/oa1220/Documents/Projects/appium-framework/venv/lib/python3.8/site-packages/appium/webdriver/webdriver.py", line 225, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "/Users/oa1220/Documents/Projects/appium-framework/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/oa1220/Documents/Projects/appium-framework/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+PYTHONPATH:
+  /Users/oa1220/Documents/Projects/appium-framework/venv/bin
+  /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python38.zip
+  /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8
+  /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/lib-dynload
+  /Users/oa1220/Documents/Projects/appium-framework/venv/lib/python3.8/site-packages
+  /Users/oa1220/Documents/Projects/appium-framework/app/tests/../..</msg>
+<msg timestamp="20210810 14:22:51.553" level="ERROR">Error in file '/Users/oa1220/Documents/Projects/appium-framework/app/tests/create_user.robot' on line 5: Importing library '/Users/oa1220/Documents/Projects/appium-framework/app/keywords/create_user.py' failed: WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+
+Traceback (most recent call last):
+  File "/Users/oa1220/Documents/Projects/appium-framework/app/keywords/create_user.py", line 7, in &lt;module&gt;
+    cu = CreateUser()
+  File "/Users/oa1220/Documents/Projects/appium-framework/app/tests/../../app/pages/create_user.py", line 7, in __init__
+    super().__init__()
+  File "/Users/oa1220/Documents/Projects/appium-framework/app/tests/../../framework/utils/base_page.py", line 18, in __init__
+    self.driver = clients.getMobileDriver()
+  File "/Users/oa1220/Documents/Projects/appium-framework/app/tests/../../framework/config/clients.py", line 10, in getMobileDriver
+    driver = createDriver()
+  File "/Users/oa1220/Documents/Projects/appium-framework/app/tests/../../framework/config/clients.py", line 34, in createDriver
+    driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", desired_caps)
+  File "/Users/oa1220/Documents/Projects/appium-framework/venv/lib/python3.8/site-packages/appium/webdriver/webdriver.py", line 155, in __init__
+    super().__init__(
+  File "/Users/oa1220/Documents/Projects/appium-framework/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/oa1220/Documents/Projects/appium-framework/venv/lib/python3.8/site-packages/appium/webdriver/webdriver.py", line 225, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "/Users/oa1220/Documents/Projects/appium-framework/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/oa1220/Documents/Projects/appium-framework/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+PYTHONPATH:
+  /Users/oa1220/Documents/Projects/appium-framework/venv/bin
+  /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python38.zip
+  /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8
+  /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/lib-dynload
+  /Users/oa1220/Documents/Projects/appium-framework/venv/lib/python3.8/site-packages
+  /Users/oa1220/Documents/Projects/appium-framework/app/tests/../..
+  /Users/oa1220/Documents/Projects/appium-framework/app/tests/../..</msg>
+</errors>
+</robot>
